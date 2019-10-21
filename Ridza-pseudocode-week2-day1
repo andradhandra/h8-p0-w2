@@ -1,3 +1,46 @@
-Tugas pseudocode Ridza 
+Tugas Pseudocode Ridza 
 
-1. dsdw
+1. Second Law of Newton Algorithm Calculation
+
+STORE 'mass' = 600
+STORE 'cceleration' = 2
+
+CALCULATE 'mass' * 'acceleration' 
+SET 'force' value from CALCULATE
+
+DISPLAY 'force'
+
+
+2. Leap Year Algorithm
+
+STORE 'year' with any value
+
+IF 'year' mod 4 == 0 AND 'year' mod 100 != 0 
+    ELSE IF 'year' mod 4 == 0 AND 'year' mod 100 == 0 AND 'year' mod 400 == 0
+
+DO DISPLAY "Tahun 'year' adalah tahun kabisat"
+ELSE 
+DO DISPLAY "Tahun 'year' BUKAN tahun kabisat"
+
+
+3. Foxie Laundry Day Algorithm
+
+STORE 'laundry' = 1
+
+WHILE 'laundry' <= 20
+    ADD 'laundry' by 1
+
+DO "Nyalakan mesin cuci"
+
+
+4. Periksa Kuku Algorithm
+
+STORE 'siswa' = 1
+STORE 'kukuPanjang' as boolean
+
+WHILE 'siswa' <= 40
+    IF 'kukuPanjang' = "yes"
+    DO "hukum"
+    ELSE DO "pujian"
+   
+ADD 'siswa' by 1
