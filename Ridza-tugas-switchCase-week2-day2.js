@@ -9,14 +9,16 @@ var tanggal = 31;
 
 
 // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
-var bulan = 11; 
+var bulan = 10; 
 
 
 // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
-var tahun = 1991;
+var tahun = 2201;
 
 //Memproses penanggalan
-if (tanggal < 31) {
+if (tahun < 1900 || tahun > 2200) {
+  console.log('Penanggalan yang Anda masukan tidak valid!');
+} else if (tanggal < 31) {
     switch (bulan) {
         case 1: bulan = 'Januari'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
         case 2: bulan = 'Pebruari'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
@@ -45,3 +47,5 @@ if (tanggal < 31) {
     default: console.log('Penanggalan yang Anda masukan tidak valid!');
   }
 } else {console.log('Penanggalan yang Anda masukan tidak valid!');}
+
+ 
