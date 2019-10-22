@@ -17,10 +17,12 @@ STORE 'year' with any value
 
 IF 'year' mod 4 == 0 AND 'year' mod 100 != 0 
     ELSE IF 'year' mod 4 == 0 AND 'year' mod 100 == 0 AND 'year' mod 400 == 0
+    ENDIF
 
-DO DISPLAY "Tahun 'year' adalah tahun kabisat"
+DISPLAY "Tahun 'year' adalah tahun kabisat"
 ELSE 
-DO DISPLAY "Tahun 'year' BUKAN tahun kabisat"
+DISPLAY "Tahun 'year' BUKAN tahun kabisat"
+ENDIF  
 
 
 3. Foxie Laundry Day Algorithm
@@ -39,8 +41,10 @@ STORE 'siswa' = 1
 STORE 'kukuPanjang' as boolean
 
 WHILE 'siswa' <= 40
-    IF 'kukuPanjang' = "yes"
-    DO "hukum"
-    ELSE DO "pujian"
+    IF 'kukuPanjang' = "true"
+    DISPLAY "hukum"
+    ELSE DISPLAY "pujian"
+    ENDIF
    
 ADD 'siswa' by 1
+ENDWHILE
