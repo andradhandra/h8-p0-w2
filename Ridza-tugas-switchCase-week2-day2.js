@@ -9,43 +9,46 @@ var tanggal = 31;
 
 
 // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
-var bulan = 10; 
+var bulan = 4; 
 
 
 // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
-var tahun = 2201;
+var tahun = 2200;
 
 //Memproses penanggalan
 if (tahun < 1900 || tahun > 2200) {
   console.log('Penanggalan yang Anda masukan tidak valid!');
 } else if (tanggal < 31) {
     switch (bulan) {
-        case 1: bulan = 'Januari'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 2: bulan = 'Pebruari'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 3: bulan = 'Maret'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 4: bulan = 'April'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 5: bulan = 'Mei'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 6: bulan = 'Juni'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 7: bulan = 'Juli'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 8: bulan = 'Agustus'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 9: bulan = 'September'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 10: bulan = 'Oktober'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 11: bulan = 'November'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        case 12: bulan = 'Desember'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-        default: console.log('Penanggalan yang Anda masukan tidak valid!');
-    }
+        case 1: bulan = 'Januari'; break;
+        case 2: bulan = 'Pebruari'; break;
+        case 3: bulan = 'Maret'; break;
+        case 4: bulan = 'April'; break;
+        case 5: bulan = 'Mei'; break;
+        case 6: bulan = 'Juni'; break;
+        case 7: bulan = 'Juli';  break;
+        case 8: bulan = 'Agustus'; break;
+        case 9: bulan = 'September'; break;
+        case 10: bulan = 'Oktober'; break;
+        case 11: bulan = 'November'; break;
+        case 12: bulan = 'Desember'; break;
+        default: console.log('Penanggalan yang Anda masukan tidak valid!'); tanggal = ''; bulan = ''; tahun = '';
+    } 
 
 } else if (tanggal === 31) {
   switch (bulan) {
-    case 1: bulan = 'Januari'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-    case 3: bulan = 'Maret'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-    case 5: bulan = 'Mei'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-    case 7: bulan = 'Juli'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-    case 8: bulan = 'Agustus'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-    case 10: bulan = 'Oktober'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-    case 12: bulan = 'Desember'; console.log(`${tanggal} ${bulan} ${tahun}`); break;
-    default: console.log('Penanggalan yang Anda masukan tidak valid!');
-  }
-} else {console.log('Penanggalan yang Anda masukan tidak valid!');}
+    case 1: bulan = 'Januari'; break;
+    case 3: bulan = 'Maret'; break;
+    case 5: bulan = 'Mei';  break;
+    case 7: bulan = 'Juli';  break;
+    case 8: bulan = 'Agustus';  break;
+    case 10: bulan = 'Oktober';  break;
+    case 12: bulan = 'Desember';  break;
+    default: console.log('Penanggalan yang Anda masukan tidak valid!'); tanggal = ''; bulan = ''; tahun = '';
+  } 
+} else {
+  tanggal = ''; bulan = ''; tahun = '';
+  console.log('Penanggalan yang Anda masukan tidak valid!');
+}
 
- 
+console.log(`${tanggal} ${bulan} ${tahun}`);
